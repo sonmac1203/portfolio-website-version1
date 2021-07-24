@@ -132,7 +132,6 @@ h3 { font-size: var(--fs-h3) }
 
 }
 
-
 /* header */
 
 header {
@@ -213,8 +212,6 @@ header {
     opacity: 0;
 }
 
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -230,7 +227,6 @@ header {
     transition: transform 250ms ease-in-out;
 }
 
-
 .hamburger::before,
 .hamburger::after {
     content: '';
@@ -241,13 +237,6 @@ header {
 
 .hamburger::before { top: 6px;}
 .hamburger::after { bottom: 6px;}
-
-
-
-
-
-
-
 
 /*  Intro section  */
 
@@ -292,8 +281,6 @@ header {
         width: calc(100% + 1.5em);
     }
 }
-
-
 
 /*  My services section  */
 
@@ -381,7 +368,6 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
-
     }
 }
 
@@ -457,7 +443,3 @@ header {
 .social-list__link {
     padding: .5em;
 }
-
-
-
-
