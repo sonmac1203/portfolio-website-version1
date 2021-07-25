@@ -43,6 +43,10 @@ html {
     scroll-behavior: smooth;
 }
 
+header {
+    background-color: var(--clr-dark);
+}
+
 body {
     background: var(--clr-dark);
     background-image: url(../img/background2.jpeg);
@@ -205,7 +209,7 @@ header {
     background: transparent;
     border: 0;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     right: 1em;
     top: 1em;
     z-index: 1000;
@@ -483,13 +487,84 @@ header {
     }
 }
 
+/* Contact */
 
+.contact {
+    position: relative;
+    min-height: 100vh;
+    min-width: 500px
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section__title--contact {
+    color: var(--clr-accent);
+}
+
+.contact--contactForm {
+    width: 40%;
+    padding: 40px;
+}
+
+.contact--contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact--contactForm .inputBox input,
+.contact--contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    margin: 20px 0;
+    color: var(--clr-accent);
+    border: none;
+    border-bottom: 2px solid var(--clr-accent);
+    outline: none;
+    resize: none;
+}
+
+.contact--contactForm .inputBox input[type="text"],
+.contact--contactForm .inputBox input[type="email"],
+.contact--contactForm .inputBox textarea {
+    background-color: black;
+}
+
+.contact--contactForm .inputBox span {
+    color: black;
+    position: absolute;
+    left: 0;
+    padding: 8px 0;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contact--contactForm .inputBox input:focus ~ span,
+.contact--contactForm .inputBox input:valid ~ span,
+.contact--contactForm .inputBox textarea:focus ~ span,
+.contact--contactForm .inputBox textarea:valid ~ span {
+    color: var(--clr-light);
+    transform: translateY(-35px)
+}
+
+.contact--contactForm .inputBox input[type="submit"] {
+    width: 100%;
+    background: var(--clr-accent);
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
 
 
 /* footer */
 
 .footer {
-    background: #111;
+    background: var(--clr-dark);
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
