@@ -10,8 +10,6 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-        <!-- Update these with your own fonts -->
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -33,9 +31,9 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Details</a></li>
                 </ul>
             </nav>
         </header>
@@ -63,26 +61,31 @@
         </section>
         
 
-        <!--My services-->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">My projects</h2>
-            <div class="services">
-                <div class="service">
+        <!--My projects-->
+        <section class="my-projects" id="project">
+            <h2 class="section__title section__title--projects">My projects</h2>
+            <div class="projects">
+
+                <!-- Project 1 -->
+                <div class="project">
                     <h3>Smart Tic-Tac-Toe</h3>
                     <p>An unbeatable version of the game implementing minimax theorem</p>
-                </div> <!-- / service 1-->
+                </div>
 
-                <div class="service">
+                <!-- Project 2 -->
+                <div class="project">
                     <h3>Snake</h3>
                     <p>The legendary Snake written in simple C++</p>
-                </div> <!-- / service 2-->
+                </div> 
 
-                <div class="service">
+                <!-- Project 3 -->
+                <div class="project">
                     <h3>Alien invasion</h3>
                     <p>How about controlling a rocket to shoot down a fleet of aliens?</p>
-                </div> <!-- /service 3-->
+                </div>
 
-                <div class="service">
+                <!-- Project 4 -->
+                <div class="project">
                     <h3>Have you seen my snail?</h3>
                     <p>A solution to Langton's Ant model, a cellular automata</p>
                 </div>
@@ -91,7 +94,7 @@
             <a href="https://github.com/sonmac1203" class="btn">Github</a>
         </section>
 
-        <!--Details-->
+        <!-- Portfolio -->
         <section class="my-work" id="work"></section>
             <h2 class="section__title section__title--work" style="text-align: center;">Details</h2>
 
@@ -101,11 +104,11 @@
                 <div class="portfolio__item--odd" id="about">
                     <h3 class="portfolio__item--title">Smart Tic-Tac-Toe</h3>
                     <div class="portfolio__item--body">
-                        <p>This Tic-Tac-Toe version is programmed to be played between a human and the computer which is provided with an unbeatable strategy. The game applys some OOP concepts and uses recursion to implement the minimax theorem.</p>
-                        <p>Language(s): Python</p>
+                        <p>This <span class="special">Tic-Tac-Toe</span> version is programmed to be played between a human and the computer which is provided with an <span class="special">unbeatable strategy</span>. The game applys some <span class="special">OOP concepts</span> and uses recursion to implement the <a href="https://en.wikipedia.org/wiki/Minimax" style="text-decoration: none;"><span class="special">minimax theorem</span></a>.</p>
+                        <p>Language(s): <span class="special">Python</span></p>
                     </div>
-                    <img src="img/son.jpeg" alt="Still a picture about me" class="portfolio__img">
-                    <a href="https://github.com/sonmac1203" class="btn__details">More</a>
+                    <img src="img/Tictactoe.png" alt="Still a picture about me" class="portfolio__img">
+                    <a href="https://github.com/sonmac1203/tic-tac-toe.git" class="btn__details">More</a>
                 </div>
 
                 <!-- Second item -->
@@ -113,11 +116,11 @@
                     <h3 class="portfolio__item--title">Snake Game</h3>
         
                     <div class="portfolio__item--body">
-                        <p>A simple version of the legendary Snake game developed using the conio.h library which allows controlling the snake using arrow keys.</p>
-                        <p>Language(s): C++</p>
+                        <p>A simple version of the legendary <span class="special">Snake</span> game developed using the <span class="special">conio.h</span> library which allows the player to control the snake the snake using arrow keys. This version can only be played on <span class="special">Windows</span>.</p>
+                        <p>Language(s): <span class="special">C++</span></p>
                     </div>
-                    <img src="img/son.jpeg" alt="Still a picture about me" class="portfolio__img">
-                    <a href="https://github.com/sonmac1203" class="btn__details">More</a>
+                    <img src="img/snake.png" alt="Still a picture about me" class="portfolio__img">
+                    <a href="https://github.com/sonmac1203/snake_game.git" class="btn__details">More</a>
                 </div>
 
                 <!-- Third item -->
@@ -125,11 +128,11 @@
                     <h3 class="portfolio__item--title">Alien Invasion</h3>
         
                     <div class="portfolio__item--body">
-                        <p>A fun and interactive game in which the player controls a rocket by arrow keys and try to shoot down a fleet of aliens using the space key. This is a project implements the Pygame library and is introduced in Python Crash Code by Eric Matthes.</p>
-                        <p>Language(s): Python</p>
+                        <p>A fun and <span class="special">interactive</span> game in which the player controls a <span class="special">rocket</span> by arrow keys and try to shoot down a fleet of <span class="special">aliens</span> using the space key. This is a project implements the <a href="https://www.pygame.org/news" style="text-decoration: none;"><span class="special">Pygame</span></a> library and is introduced in <span class="special">Python Crash Course</span> by Eric Matthes.</p>
+                        <p>Language(s): <span class="special">Python</span></p>
                     </div>
-                    <img src="img/son.jpeg" alt="Still a picture about me" class="portfolio__img">
-                    <a href="https://github.com/sonmac1203" class="btn__details">More</a>
+                    <img src="img/alien_invasion.png" alt="Still a picture about me" class="portfolio__img">
+                    <a href="https://github.com/sonmac1203/alien_invasion_game.git" class="btn__details">More</a>
                 </div>
 
                 <!-- Fourth item -->
@@ -137,11 +140,11 @@
                     <h3 class="portfolio__item--title">Have you seen my snail?</h3>
         
                     <div class="portfolio__item--body">
-                        <p>The project implements a solution to the famous Langton's ant, a cellular automata presented on a 2-dimension black and white grid. The program is developed using OOP concepts and can be operated with command line arguments.</p>
-                        <p>Language(s): C++</p>    
+                        <p>The project implements a solution to the famous <a href="https://en.wikipedia.org/wiki/Langton%27s_ant" style="text-decoration: none;"><span class="special">Langton's ant</span></a>, a cellular automata presented on a 2-dimension black and white grid. The program is developed using <span class="special">OOP concepts</span> and can be operated with <span class="special">command line arguments</span>.</p>
+                        <p>Language(s): <span class="special">C++</span></p>    
                     </div>
-                    <img src="img/son.jpeg" alt="Still a picture about me" class="portfolio__img">
-                    <a href="https://github.com/sonmac1203" class="btn__details">More</a>
+                    <img src="img/snail.png" alt="Still a picture about me" class="portfolio__img">
+                    <a href="https://github.com/sonmac1203/have_you_seen_my_snail.git" class="btn__details">More</a>
                 </div>
 
             </div>

@@ -85,7 +85,8 @@ strong { font-weight: var(--fw-bold) }
     transition: transform 200ms ease-in-out;
 }
 
-.btn:hover {
+.btn:hover,
+.btn__details:hover {
     transform: scale(1.1);
 }
 
@@ -159,7 +160,8 @@ header {
 }
 
 .logoword {
-    font-size: 25px;
+    padding-top: 0.1em;
+    font-size: 20px;
 }
 
 
@@ -172,7 +174,6 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
-
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
 }
@@ -204,14 +205,14 @@ header {
     background: transparent;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 1em;
     z-index: 1000;
 }
 
 .nav-open .nav{
-    transform: translateX(0);    
+    transform: translateX(0);   
 }
 
 .nav-open .nav-toggle {
@@ -287,6 +288,12 @@ header {
         min-width: 250px;
         position: relative;
         z-index: 2;
+        transition: 
+            transform 750ms cubic-bezier(.5, 0, .5, 1),
+            opacity 250ms linear;
+    }
+    .intro__img:hover {
+        transform: scale(1.1);
     }    
     
     .section__subtitle--intro {
@@ -300,29 +307,29 @@ header {
     }
 }
 
-/*  My services section  */
+/*  My projects section  */
 
-.my-services {
+.my-projects {
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
 }
 
-.section__title--services {
+.section__title--projects {
     color: var(--clr-accent);
     position: relative;
     margin-bottom: 2em;
 }
 
-.service {
+.project {
     max-width: 300px;
     margin: 0 auto;
     margin-bottom: 5em;
 }
 
 @media (min-width: 800px) {
-    .services {
+    .projects {
         display: flex;
         justify-content: center;
         max-width: 1500px;
@@ -331,7 +338,7 @@ header {
         text-align: center;
     }
 
-    .service + .service {
+    .project + .project {
         margin-left: 2.5em;
     }
 }
@@ -378,7 +385,15 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
+        transition: 
+            transform 750ms cubic-bezier(.5, 0, .5, 1),
+            opacity 250ms linear;
     }
+    .about-me__img:hover {
+        transform: scale(1.2);
+    }
+
+
 }
 
 
@@ -436,10 +451,17 @@ header {
     .portfolio__item--body {
         align-self: center;
     }
-
-    .portfolio__img{
+    
+    .portfolio__img {
         grid-area: img;
         position: relative;
+        transition: 
+            transform 750ms cubic-bezier(.5, 0, .5, 1),
+            opacity 250ms linear;
+    }
+    
+    .portfolio__img:hover {
+        transform: scale(1.2);
     }
 
     .btn__details {
